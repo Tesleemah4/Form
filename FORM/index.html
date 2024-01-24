@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><u>Student Registration Form</u></p>
+   <div class="main">
+    <form action="#" id="form" method="POST" target="_self" enctype="multipart/form-data">
+       <div class="form">  
+        <label for="fname" class="label">First Name</label>
+            <input type="text" name="first-name" id="fname" autocapitalize maxlength="15" placeholder="Enter your name" >
+        </div>
+        <div class="form"> 
+           <label for="lname" class="label">Last Name</label>
+            <input type="text" id="lname"  readonly name="last-name" minlength="5" placeholder="Enter your last last-name">
+         </div>
+        <div class="form">
+            <label for="Email" class="label" >Email</label>
+            <input type="email" id="email" required min="18" placeholder="must contain @">
+        </div>
+        <div class="form">
+          <label for="Gender" class="label">Gender</label>
+            <input type="radio" id="Male">Male <input type="radio">Female
+        </div>
+        <div class="form">  
+           <label for="Date of birth"class="label" >Date of Birth</label>
+            <input type="date" id="Date of birth" required min="18">
+        </div>
+        <div class="form">
+           <label for="Address" class="label" >Address</label> 
+            <textarea rows="5"></textarea>
+        </div>
+        <div class="form">
+           <label for="city" class="label">City</label>
+            <input type="text" id="city"  readonly name="last-name" minlength="5">
+        </div>
+        <div class="form">
+         <label for="APIN" class="label" >Area PIN</label>
+            <input type="number" id="city"  minlength="5">
+        </div>
+        <div class="form">
+           <label for="State" class="label" >State</label>
+            <input type="text" id="State" minlength="5">
+        </div>
+        <div class="form">
+           <label for="Q" class="label" >Qualification</label>
+            <select>
+                <option>Select Qualification</option>
+                <option>ND</option>
+                <option>HND</option>
+                <option>BSC</option>
+            </select>
+            </div>
+            <div class="form">
+            <label for="SPL"class="label" >Specialization</label>
+            <input type="checkbox" id="">Computer science
+            <div class="SPL">
+            <input type="checkbox">Information Technology
+           <br>
+            <input type="checkbox">Computer Architecture
+            <br>
+            <input type="checkbox">Telecommunication
+            </div>
+            </div>
+            <div class="form">
+            <label for="Pword" class="label" >Password</label>
+            <input type="password" id="Pword" minlength="5">
+            </div>
+            <button type="submit">Registered</button>
+        </form>
+   </div>
