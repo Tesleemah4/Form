@@ -1,6 +1,30 @@
 html,body{
   
 }
+* {
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    position: relative;
+}
+table tbody tr td:nth-child(1) {
+    width: 25%;
+}
+table tbody tr td:nth-child(2) {
+    width: 75%;
+}
+table tr td {
+    padding: 5px !important;
+}
+input, textarea {
+    padding: 5px;
+    width: 80%;
+    max-width: 500px;
+}
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
 .form{
     margin:0.5rem;
     padding: 0.3rem;
@@ -34,4 +58,5 @@ label{
 
     
 }
+
 
